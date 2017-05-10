@@ -9,7 +9,7 @@ angular.module('geoFence', [])
                 phlebos: "=",
                 saveZone: "&"
             },
-            templateUrl: "partials/directives/geofencing/geofence.html",
+            templateUrl: "bower_components/angular-geofence/geofence.html",
             controller: ['$scope', '$timeout', function($scope, $timeout, $watch) {
 
                 // googlemap variables //
