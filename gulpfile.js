@@ -20,7 +20,6 @@ gulp.task('js:build', function () {
 gulp.task('gulp:commit', function(){
   // just source anything here - we just wan't to call the prompt for now
   return gulp.src('./*')
-  .pipe(git.add())
   .pipe(prompt.prompt({
     type: 'input',
     name: 'commit',
@@ -29,6 +28,7 @@ gulp.task('gulp:commit', function(){
     // now add all files that should be committed
     // but make sure to exclude the .gitignored ones, since gulp-git tries to commit them, too
     return gulp.src([ '!node_modules/', '!package.json','!geofence.html','!gulpfile.js','!geofence.js', './*' ], {buffer:false})
+    .pipe(git.add())
     .pipe(git.commit(res.commit));
    }));
 });
