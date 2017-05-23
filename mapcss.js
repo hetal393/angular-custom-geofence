@@ -1,4 +1,4 @@
-[
+var mapStyle = [
     {
         "featureType": "all",
         "elementType": "labels.text.fill",
