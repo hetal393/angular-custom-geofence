@@ -4,7 +4,13 @@ var mapStyle = [
         "elementType": "labels.text.fill",
         "stylers": [
             {
-                "color": "#ffffff"
+                "saturation": 36
+            },
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 40
             }
         ]
     },
@@ -13,10 +19,22 @@ var mapStyle = [
         "elementType": "labels.text.stroke",
         "stylers": [
             {
+                "visibility": "on"
+            },
+            {
                 "color": "#000000"
             },
             {
-                "lightness": 13
+                "lightness": 16
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
             }
         ]
     },
@@ -26,6 +44,9 @@ var mapStyle = [
         "stylers": [
             {
                 "color": "#000000"
+            },
+            {
+                "lightness": 20
             }
         ]
     },
@@ -34,31 +55,25 @@ var mapStyle = [
         "elementType": "geometry.stroke",
         "stylers": [
             {
-                "lightness": 14
+                "color": "#000000"
             },
             {
-                "weight": 1.4
+                "lightness": 17
+            },
+            {
+                "weight": 1.2
             }
         ]
     },
     {
         "featureType": "landscape",
-        "elementType": "all",
+        "elementType": "geometry",
         "stylers": [
             {
-                "color": "#08304b"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape.natural.landcover",
-        "elementType": "labels",
-        "stylers": [
-            {
-                "visibility": "off"
+                "color": "#000000"
             },
             {
-                "hue": "#ffa100"
+                "lightness": 20
             }
         ]
     },
@@ -67,10 +82,10 @@ var mapStyle = [
         "elementType": "geometry",
         "stylers": [
             {
-                "color": "#0c4152"
+                "color": "#000000"
             },
             {
-                "lightness": 5
+                "lightness": 21
             }
         ]
     },
@@ -79,7 +94,10 @@ var mapStyle = [
         "elementType": "geometry.fill",
         "stylers": [
             {
-                "color": "#000000"
+                "color": "#625b5b"
+            },
+            {
+                "lightness": 17
             }
         ]
     },
@@ -88,10 +106,28 @@ var mapStyle = [
         "elementType": "geometry.stroke",
         "stylers": [
             {
-                "color": "#0b434f"
+                "color": "#000000"
             },
             {
-                "lightness": 25
+                "lightness": 29
+            },
+            {
+                "weight": 0.2
+            },
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#000000"
+            },
+            {
+                "lightness": 18
             }
         ]
     },
@@ -100,19 +136,7 @@ var mapStyle = [
         "elementType": "geometry.fill",
         "stylers": [
             {
-                "color": "#000000"
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "color": "#0b3d51"
-            },
-            {
-                "lightness": 16
+                "color": "#4c4c4c"
             }
         ]
     },
@@ -122,24 +146,42 @@ var mapStyle = [
         "stylers": [
             {
                 "color": "#000000"
+            },
+            {
+                "lightness": 16
             }
         ]
     },
     {
         "featureType": "transit",
-        "elementType": "all",
+        "elementType": "geometry",
         "stylers": [
             {
-                "color": "#146474"
+                "color": "#000000"
+            },
+            {
+                "lightness": 19
             }
         ]
     },
     {
         "featureType": "water",
-        "elementType": "all",
+        "elementType": "geometry",
         "stylers": [
             {
-                "color": "#021019"
+                "color": "#000000"
+            },
+            {
+                "lightness": 17
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#215367"
             }
         ]
     }
