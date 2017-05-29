@@ -2,19 +2,19 @@
     height: 280px !important;
 }
 
-.controls {
-  margin-top: 10px;
+.geo-controls {
+  margin-top: 5px;
   border: 1px solid transparent;
-  border-radius: 2px 0 0 2px;
+  border-radius: 3px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  height: 32px;
+  height: 25px;
   outline: none;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-#pac-input {
-  left:1px !important;
+#geo-input {
+  left:-6px !important;
   background-color: #fff;
   font-family: Roboto;
   font-size: 15px;
@@ -25,7 +25,7 @@
   width: 97%;
 }
 
-#pac-input:focus {
+#geo-input:focus {
   border-color: #4d90fe;
 }
 
